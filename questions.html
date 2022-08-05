@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Water Bill Site</title>
+
+    <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link href="static/css/style.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="intro-header">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="intro-message">
+            <nav>
+              <ul>
+                <li><a ID = "nav_bar_buttons" href="index">Home</a></li>
+                <li><a ID = "nav_bar_buttons" href="questions">Calculate Water Bill</a>
+                <li><a ID = "nav_bar_buttons" href="sendWaterInfo">Your Results</a></li>
+              </ul>
+            </nav>
+            <h1>~~  Water Bill Calculator  ~~</h1>
+            <h2>Find out what your water bill is worth internationally </h2>
+            <h3>
+              Input some information about your water usage habits to find out how much water bill would be in the US and in countries around the world.
+            </h3>
+            <hr class="intro-divider">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </div>
+
+<div class="content-section-a">
+  <form method="POST" action="/sendWaterInfo">
+  <label for="num_showers">How many times do you shower each week?</label>
+  <input type='text' name='num_showers'>
+  <br></br>
+  <label for="shower_length">On average, how long are your showers (in minutes)?</label>
+  <input type='text' name='shower_length'>
+  <br></br>
+  <label for="num_laundry">How many loads of laundry do you do per week?</label>
+  <input type='text' name='num_laundry'>
+  <br></br>
+  <label for="handwash_length">How long do you spend handwashing dishes each day (in minutes)?</label>
+  <input type='text' name='handwash_length'>
+  <br></br>
+  <label for="num_dishwasher">How many times do you run the dishwasher per week?</label>
+  <input type='text' name='num_dishwasher'>
+  <br></br>
+  <label for="faucet_length">How long do use the faucet each day in minutes?</label>
+  <input type='text' name='faucet_length'>
+  <br></br>
+  <label for="drinking_water">How much of your own tap water do you drink each day(in ounces)?</label>
+  <input type='text' name='drinking_water'>
+  <br></br>
+  <label for="num_irrigation">How many irrigation cycles do you run each week on your lawn?</label>
+  <input type='text' name='num_irrigation'>
+  <br></br>
+  <label for="irrigation_length">How long do you run each irrigation cycle (in minutes)?</label>
+  <input type='text' name='irrigation_length'>
+  <br></br>
+  <label for="hose_length">How long do you use your hose each week (in minutes)?</label>
+  <input type='text' name='hose_length'>
+  <br></br>
+  <label for="pool_length">How long do you fill your pool each week (in minutes)?</label>
+  <input type='text' name='pool_length'>
+  <br></br>
+  <input type="submit">
+  </form>
+</div>
+  <!-- /.content-section-a --> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
